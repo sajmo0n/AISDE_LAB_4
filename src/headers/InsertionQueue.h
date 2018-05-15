@@ -7,26 +7,28 @@
 #include "SmartInsertion.h"
 #include "AbstractPriorityQueue.h"
 
-// Wersja nadgorliwa
 template <typename typ>
-class InsertionQueueOfficious : public SmartInsertion<typ>, public
-AbstractPriorityOfficiousQueue<typ>{
+class InsertionQueueOfficious : public SmartInsertion<typ>, public AbstractPriorityOfficiousQueue<typ> {
 public:
-    InsertionQueueOfficious() : AbstractPriorityOfficiousQueue<typ>("Insertion"){ std::cout
-                << "\n"; }
+    InsertionQueueOfficious() : AbstractPriorityOfficiousQueue<typ>("Insertion") {
+        std::cout
+                << "\n";
+    }
+
 private:
-    void putOfficious(typ& a) {
-        (*this) += a; // dodanie nowej danej
-        SmartInsertion<typ>::doInsertion(); }
-    typ getOfficious(){
+    void putOfficious(typ &a) {
+        (*this) += a;
+        SmartInsertion<typ>::doInsertion();
+    }
+
+    typ getOfficious() {
         typ ret = SmartInsertion<typ>::getFirst();
         SmartInsertion<typ>::doInsertion();
         return ret;
     }
-
 };
 
-// Wersja leniwa
+
 template <typename typ>
 class InsertionQueueLazy : public SmartInsertion<typ>, public
 AbstractPriorityLazyQueue<typ> {

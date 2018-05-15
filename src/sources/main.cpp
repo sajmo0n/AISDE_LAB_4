@@ -2,20 +2,19 @@
 
 #include <iostream>
 #include <InsertionQueue.h>
-
+#include "QuicksortQueue.h"
 #include "RandomGenerator.h"
 #include "HeapQueue.h"
 #include "TournamentQueue.h"
 #include "BubbleQueue.h"
 #include "SelectionQueue.h"
-
 #include "SimpleObject.h"
 
 
 
 int main (int argc, char * const argv[]) {
 
-	RandomGenerator gen(283591); // tu nalezy wstawic numer indeksu
+    RandomGenerator gen(283591); // tu nalezy wstawic numer indeksu
 
 
 // Wybor implementacji kolejki:
@@ -27,19 +26,21 @@ int main (int argc, char * const argv[]) {
 //	BubbleQueueOfficious<SimpleObject<int> > theQueue;
 //	BubbleQueueLazy<SimpleObject<int> > theQueue;
 //	SelectionQueueOfficious<SimpleObject<int> > theQueue;
-//	SelectionQueueLazy<SimpleObject<int> > theQueue;
+//  SelectionQueueLazy<SimpleObject<int> > theQueue;
 //  InsertionQueueOfficious<SimpleObject<int> > theQueue;
-	InsertionQueueLazy<SimpleObject<int> > theQueue;
+//	InsertionQueueLazy<SimpleObject<int> > theQueue;
+//  QuicksortQueueOfficious<SimpleObject<int> > theQueue;
+    QuicksortQueueLazy<SimpleObject<int> > theQueue;
+
 
 
 // testowanie kolejki w petli - najpierw wkladamy potem wyjmujemy
 
     SimpleObject<int> a = SimpleObject<int>(0);
 
-    long wielkosc = 8;
-    for(int i = 0; i <= wielkosc; i++)
-    {
-        a.setValue(gen.getRandom(1,50));
+    long wielkosc = 50;
+    for (int i = 0; i <= wielkosc; i++) {
+        a.setValue(gen.getRandom(1, 100));
         theQueue.put(a);
 //        std::cout << "wartosc a: " << a.getValue() << "\n";
 //        std::cout << "kolejka: " << theQueue[i].getValue() << "\n\n";
@@ -50,28 +51,31 @@ int main (int argc, char * const argv[]) {
     std::cout << "Comparisons: " << SimpleObject<int>::getComparisons() << "\n";
     std::cout << "Copyings: " << SimpleObject<int>::getCopyings() << "\n\n";
 
-    for(int i = 0; i < wielkosc+1; i++)
-    {
-        try{
-//            std::cout << "DataSize: " << theQueue.getDataSize() << "\n";
-            theQueue.printDataTable("przed get");
-		    std::cout << "get: " << theQueue.get().getValue() << "\n\n";
-            theQueue.printDataTable("po get");
-		}
-	    catch(QueueException& exc) {
-		std::cout << "get: empty\n";
-	    }
-
-    }
-
+    theQueue.quicksort(0L, theQueue.getDataSize());
+    theQueue.printDataTable("po sortowaniu");
     std::cout << "Comparisons: " << SimpleObject<int>::getComparisons() << "\n";
-    std::cout << "Copyings: " << SimpleObject<int>::getCopyings() << "\n";
+    std::cout << "Copyings: " << SimpleObject<int>::getCopyings() << "\n\n";
+
+//    for (int i = 0; i < wielkosc + 1; i++) {
+//        try {
+////            std::cout << "DataSize: " << theQueue.getDataSize() << "\n";
+////            theQueue.printDataTable("przed get");
+////            std::cout << "get: " << theQueue.get().getValue() << "\n\n";
+////              theQueue.printDataTable("po get");
+//              theQueue.get();
+//        }
+//        catch (QueueException &exc) {
+//            std::cout << "get: empty\n";
+//        }
+//
+//    }
+//
+//    std::cout << "Comparisons: " << SimpleObject<int>::getComparisons() << "\n";
+//    std::cout << "Copyings: " << SimpleObject<int>::getCopyings() << "\n";
 
     return 0;
-
-
-// Proste, "silowe" testowanie kolejki
-//	SimpleObject<int> a = SimpleObject<int>(8);
+}
+// Proste, "silowe" testowanie kolejki//	SimpleObject<int> a = SimpleObject<int>(8);
 //	theQueue.put(a);
 //	a.setValue(2);
 //	theQueue.put(a);
@@ -123,4 +127,4 @@ int main (int argc, char * const argv[]) {
 //	std::cout << "Copyings: " << SimpleObject<int>::getCopyings() << "\n";
 //
 //    return 0;
-}
+//}

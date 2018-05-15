@@ -18,7 +18,6 @@ public:
                 for(long i=start;i>0;i--){
                     if((*this)[i-1]<(*this)[i])
                         SmartDataTable<typ>::swap(i-1,i);
-
                 }
             }
     }
