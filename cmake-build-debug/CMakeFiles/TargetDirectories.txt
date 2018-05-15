@@ -1,0 +1,3 @@
+/home/sajmon/Pulpit/Kolejka/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/sajmon/Pulpit/Kolejka/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/sajmon/Pulpit/Kolejka/cmake-build-debug/CMakeFiles/Kolejka.dir

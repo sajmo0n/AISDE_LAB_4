@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Kolejka"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/sajmon/Pulpit/Kolejka/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/sajmon/Pulpit/Kolejka/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sajmon/Pulpit/Kolejka/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/sajmon/Pulpit/Kolejka/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sajmon/Pulpit/Kolejka/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/sajmon/Pulpit/Kolejka/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/sajmon/Pulpit/Kolejka/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sajmon/Pulpit/Kolejka/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/sajmon/Pulpit/Kolejka/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sajmon/Pulpit/Kolejka/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/sajmon/Pulpit/Kolejka/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/sajmon/Pulpit/Kolejka/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sajmon/Pulpit/Kolejka/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/sajmon/Pulpit/Kolejka/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sajmon/Pulpit/Kolejka/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Kolejka">
+				<Option output="/home/sajmon/Pulpit/Kolejka/cmake-build-debug/Kolejka" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sajmon/Pulpit/Kolejka/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/sajmon/Pulpit/Kolejka/src/headers"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/sajmon/Pulpit/Kolejka/cmake-build-debug/Makefile&quot;  VERBOSE=1 Kolejka"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sajmon/Pulpit/Kolejka/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/sajmon/Pulpit/Kolejka/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sajmon/Pulpit/Kolejka/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Kolejka/fast">
+				<Option output="/home/sajmon/Pulpit/Kolejka/cmake-build-debug/Kolejka" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sajmon/Pulpit/Kolejka/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/sajmon/Pulpit/Kolejka/src/headers"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/sajmon/Pulpit/Kolejka/cmake-build-debug/Makefile&quot;  VERBOSE=1 Kolejka/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sajmon/Pulpit/Kolejka/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/sajmon/Pulpit/Kolejka/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sajmon/Pulpit/Kolejka/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/sajmon/Pulpit/Kolejka/Makefile">
+			<Option target="Kolejka"/>
+		</Unit>
+		<Unit filename="/home/sajmon/Pulpit/Kolejka/src/headers/AbstractPriorityObject.h">
+			<Option target="Kolejka"/>
+		</Unit>
+		<Unit filename="/home/sajmon/Pulpit/Kolejka/src/headers/AbstractPriorityQueue.h">
+			<Option target="Kolejka"/>
+		</Unit>
+		<Unit filename="/home/sajmon/Pulpit/Kolejka/src/headers/AbstractQueue.h">
+			<Option target="Kolejka"/>
+		</Unit>
+		<Unit filename="/home/sajmon/Pulpit/Kolejka/src/headers/BubbleQueue.h">
+			<Option target="Kolejka"/>
+		</Unit>
+		<Unit filename="/home/sajmon/Pulpit/Kolejka/src/headers/HeapQueue.h">
+			<Option target="Kolejka"/>
+		</Unit>
+		<Unit filename="/home/sajmon/Pulpit/Kolejka/src/headers/RandomGenerator.h">
+			<Option target="Kolejka"/>
+		</Unit>
+		<Unit filename="/home/sajmon/Pulpit/Kolejka/src/headers/SelectionQueue.h">
+			<Option target="Kolejka"/>
+		</Unit>
+		<Unit filename="/home/sajmon/Pulpit/Kolejka/src/headers/SimpleObject.h">
+			<Option target="Kolejka"/>
+		</Unit>
+		<Unit filename="/home/sajmon/Pulpit/Kolejka/src/headers/SmartBubble.h">
+			<Option target="Kolejka"/>
+		</Unit>
+		<Unit filename="/home/sajmon/Pulpit/Kolejka/src/headers/SmartDataTable.h">
+			<Option target="Kolejka"/>
+		</Unit>
+		<Unit filename="/home/sajmon/Pulpit/Kolejka/src/headers/SmartHeap.h">
+			<Option target="Kolejka"/>
+		</Unit>
+		<Unit filename="/home/sajmon/Pulpit/Kolejka/src/headers/SmartSelection.h">
+			<Option target="Kolejka"/>
+		</Unit>
+		<Unit filename="/home/sajmon/Pulpit/Kolejka/src/headers/SmartTable.h">
+			<Option target="Kolejka"/>
+		</Unit>
+		<Unit filename="/home/sajmon/Pulpit/Kolejka/src/headers/SmartTournament.h">
+			<Option target="Kolejka"/>
+		</Unit>
+		<Unit filename="/home/sajmon/Pulpit/Kolejka/src/headers/TournamentQueue.h">
+			<Option target="Kolejka"/>
+		</Unit>
+		<Unit filename="/home/sajmon/Pulpit/Kolejka/src/headers/statistics.h">
+			<Option target="Kolejka"/>
+		</Unit>
+		<Unit filename="/home/sajmon/Pulpit/Kolejka/src/sources/main.cpp">
+			<Option target="Kolejka"/>
+		</Unit>
+		<Unit filename="/home/sajmon/Pulpit/Kolejka/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
