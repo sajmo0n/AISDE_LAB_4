@@ -104,6 +104,9 @@
 		<Unit filename="/home/sajmon/Pulpit/Kolejka/src/headers/HeapQueue.h">
 			<Option target="Kolejka"/>
 		</Unit>
+		<Unit filename="/home/sajmon/Pulpit/Kolejka/src/headers/InsertionQueue.h">
+			<Option target="Kolejka"/>
+		</Unit>
 		<Unit filename="/home/sajmon/Pulpit/Kolejka/src/headers/RandomGenerator.h">
 			<Option target="Kolejka"/>
 		</Unit>
@@ -120,6 +123,9 @@
 			<Option target="Kolejka"/>
 		</Unit>
 		<Unit filename="/home/sajmon/Pulpit/Kolejka/src/headers/SmartHeap.h">
+			<Option target="Kolejka"/>
+		</Unit>
+		<Unit filename="/home/sajmon/Pulpit/Kolejka/src/headers/SmartInsertion.h">
 			<Option target="Kolejka"/>
 		</Unit>
 		<Unit filename="/home/sajmon/Pulpit/Kolejka/src/headers/SmartSelection.h">

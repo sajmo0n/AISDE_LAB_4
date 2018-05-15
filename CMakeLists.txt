@@ -20,7 +20,9 @@ add_executable(Kolejka
         src/headers/SmartSelection.h
         src/headers/SmartTable.h
         src/headers/SmartTournament.h
+        src/headers/SmartInsertion.h
         src/headers/statistics.h
         src/headers/TournamentQueue.h
+        src/headers/InsertionQueue.h
         src/sources/main.cpp
         Makefile)

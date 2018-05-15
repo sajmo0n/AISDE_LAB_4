@@ -7,12 +7,14 @@ CMakeFiles/Kolejka.dir/src/sources/main.cpp.o
  ../src/headers/AbstractQueue.h
  ../src/headers/BubbleQueue.h
  ../src/headers/HeapQueue.h
+ ../src/headers/InsertionQueue.h
  ../src/headers/RandomGenerator.h
  ../src/headers/SelectionQueue.h
  ../src/headers/SimpleObject.h
  ../src/headers/SmartBubble.h
  ../src/headers/SmartDataTable.h
  ../src/headers/SmartHeap.h
+ ../src/headers/SmartInsertion.h
  ../src/headers/SmartSelection.h
  ../src/headers/SmartTable.h
  ../src/headers/SmartTournament.h

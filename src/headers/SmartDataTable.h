@@ -15,7 +15,7 @@
 
 template <typename typ>
 class SmartDataTable : public SmartTable<typ> {
-	long dataSize; // liczba danych w tablicy (moze sie zmieniac w wyniku wykonania operacji interfejsu kolejki: get i put )
+	signed long dataSize; // liczba danych w tablicy (moze sie zmieniac w wyniku wykonania operacji interfejsu kolejki: get i put )
 	
 public:
 	SmartDataTable<typ>() : dataSize(-1L) {}
@@ -33,7 +33,9 @@ public:
 	typ getFirst(){
 		if(dataSize < 0L) throw QueueException(QUEUE_EMPTY);
 		typ ret = (*this)[0];
-		if(dataSize > 0L) (*this)[0] = (*this)[dataSize--];
+		//else if(dataSize == 0L)
+		if(dataSize >= 0L) (*this)[0] = (*this)[dataSize--];
+		//if(dataSize > 0L) (*this)[0] = (*this)[dataSize--]; nie dziala poprawnie przy ostatnim elemencie w kolejce, caly czas w niej pozostaje
 		return ret;
 	}
 
@@ -86,9 +88,9 @@ public:
 public:
 	void printDataTable(const char* string){
 		std::cout << "DataTable (" << string << "):\n";
-		std::cout << "Wielkosc tablicy: " << getDataSize() << std::endl; //wykorzystywane bylo do sprawdzenia wielkosci tablicy, szukana wartosc przed tablica...
-		for(long i = 1; i <= getDataSize(); i++) std::cout << (*this)[i].getValue() << "\n";
-		std::cout << "-------\n";
+		std::cout << "Wielkosc tablicy: " << getDataSize()+1 << std::endl; //wykorzystywane bylo do sprawdzenia wielkosci tablicy, szukana wartosc przed tablica...
+		for(long i = 0; i <= getDataSize(); i++) std::cout << (*this)[i].getValue() << "\n";
+		std::cout << "-------\n\n";
 	}	
 };
 

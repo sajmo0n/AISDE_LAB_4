@@ -1,6 +1,7 @@
 #define MAIN_FILE
 
 #include <iostream>
+#include <InsertionQueue.h>
 
 #include "RandomGenerator.h"
 #include "HeapQueue.h"
@@ -20,38 +21,47 @@ int main (int argc, char * const argv[]) {
 // Wybor implementacji kolejki:
 
 //	TournamentQueueOfficious<SimpleObject<int> > theQueue;
-	TournamentQueueLazy<SimpleObject<int> > theQueue;
+//	TournamentQueueLazy<SimpleObject<int> > theQueue;
 //  HeapQueueOfficious<SimpleObject<int> > theQueue;
 //  HeapQueueLazy<SimpleObject<int> > theQueue;
 //	BubbleQueueOfficious<SimpleObject<int> > theQueue;
 //	BubbleQueueLazy<SimpleObject<int> > theQueue;
 //	SelectionQueueOfficious<SimpleObject<int> > theQueue;
 //	SelectionQueueLazy<SimpleObject<int> > theQueue;
+//  InsertionQueueOfficious<SimpleObject<int> > theQueue;
+	InsertionQueueLazy<SimpleObject<int> > theQueue;
 
 
 // testowanie kolejki w petli - najpierw wkladamy potem wyjmujemy
 
     SimpleObject<int> a = SimpleObject<int>(0);
 
-    for(int i = 0; i <= 10; i++)
+    long wielkosc = 8;
+    for(int i = 0; i <= wielkosc; i++)
     {
         a.setValue(gen.getRandom(1,50));
         theQueue.put(a);
+//        std::cout << "wartosc a: " << a.getValue() << "\n";
+//        std::cout << "kolejka: " << theQueue[i].getValue() << "\n\n";
     }
 
     theQueue.printDataTable("po pierwszym wczytaniu losowym");
 
-    long wielkosc = theQueue.getDataSize();
+    std::cout << "Comparisons: " << SimpleObject<int>::getComparisons() << "\n";
+    std::cout << "Copyings: " << SimpleObject<int>::getCopyings() << "\n\n";
 
-    for(int i = 0; i < wielkosc; i++)
+    for(int i = 0; i < wielkosc+1; i++)
     {
         try{
-		std::cout << "get: " << theQueue.get().getValue() << "\n\n";
+//            std::cout << "DataSize: " << theQueue.getDataSize() << "\n";
+            theQueue.printDataTable("przed get");
+		    std::cout << "get: " << theQueue.get().getValue() << "\n\n";
+            theQueue.printDataTable("po get");
 		}
 	    catch(QueueException& exc) {
 		std::cout << "get: empty\n";
 	    }
-	    theQueue.printDataTable("po get");
+
     }
 
     std::cout << "Comparisons: " << SimpleObject<int>::getComparisons() << "\n";

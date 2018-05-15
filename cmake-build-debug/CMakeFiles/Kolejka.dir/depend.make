@@ -6,12 +6,14 @@ CMakeFiles/Kolejka.dir/src/sources/main.cpp.o: ../src/headers/AbstractPriorityQu
 CMakeFiles/Kolejka.dir/src/sources/main.cpp.o: ../src/headers/AbstractQueue.h
 CMakeFiles/Kolejka.dir/src/sources/main.cpp.o: ../src/headers/BubbleQueue.h
 CMakeFiles/Kolejka.dir/src/sources/main.cpp.o: ../src/headers/HeapQueue.h
+CMakeFiles/Kolejka.dir/src/sources/main.cpp.o: ../src/headers/InsertionQueue.h
 CMakeFiles/Kolejka.dir/src/sources/main.cpp.o: ../src/headers/RandomGenerator.h
 CMakeFiles/Kolejka.dir/src/sources/main.cpp.o: ../src/headers/SelectionQueue.h
 CMakeFiles/Kolejka.dir/src/sources/main.cpp.o: ../src/headers/SimpleObject.h
 CMakeFiles/Kolejka.dir/src/sources/main.cpp.o: ../src/headers/SmartBubble.h
 CMakeFiles/Kolejka.dir/src/sources/main.cpp.o: ../src/headers/SmartDataTable.h
 CMakeFiles/Kolejka.dir/src/sources/main.cpp.o: ../src/headers/SmartHeap.h
+CMakeFiles/Kolejka.dir/src/sources/main.cpp.o: ../src/headers/SmartInsertion.h
 CMakeFiles/Kolejka.dir/src/sources/main.cpp.o: ../src/headers/SmartSelection.h
 CMakeFiles/Kolejka.dir/src/sources/main.cpp.o: ../src/headers/SmartTable.h
 CMakeFiles/Kolejka.dir/src/sources/main.cpp.o: ../src/headers/SmartTournament.h
