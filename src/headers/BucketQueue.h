@@ -4,30 +4,30 @@
 
 #ifndef BUCKETSORT_QUEUE_H
 #define BUCKETSORT_QUEUE_H
-#include "SmartBucketsort.h"
+#include "SmartBucket.h"
 #include "AbstractPriorityQueue.h"
 
 
 template <typename typ>
-class BucketsortQueueOfficious : public SmartBucketsort<typ>, public AbstractPriorityOfficiousQueue<typ>{
+class BucketsortQueueOfficious : public SmartBucket<typ>, public AbstractPriorityOfficiousQueue<typ>{
 public:
     BucketsortQueueOfficious() : AbstractPriorityOfficiousQueue<typ>("Bucketsort"){ std::cout << "\n"; }
 
 private:
     void putOfficious(typ& a) {
         (*this) += a;
-        SmartBucketsort<typ>::bucketsort(1000);
+        SmartBucket<typ>::bucketsort(1000);
     }
 
     typ getOfficious(){
-        typ ret = SmartBucketsort<typ>::getFirst();
-        SmartBucketsort<typ>::bucketsort(1000);
+        typ ret = SmartBucket<typ>::getFirst();
+        SmartBucket<typ>::bucketsort(1000);
         return ret;
     }
 };
 
 template <typename typ>
-class BucketsortQueueLazy : public SmartBucketsort<typ>, public AbstractPriorityLazyQueue<typ> {
+class BucketsortQueueLazy : public SmartBucket<typ>, public AbstractPriorityLazyQueue<typ> {
 public:
     BucketsortQueueLazy() : AbstractPriorityLazyQueue<typ>("Bucketsort"){ std::cout << "\n"; }
 
@@ -37,11 +37,11 @@ private:
     }
 
     typ getLazy(){
-        if(SmartBucketsort<typ>::getDataSize() < 0L) throw QueueException(QUEUE_EMPTY);
+        if(SmartBucket<typ>::getDataSize() < 0L) throw QueueException(QUEUE_EMPTY);
 
-        SmartBucketsort<typ>::bucketsort(1000);
+        SmartBucket<typ>::bucketsort(1000);
         //SmartDataTable<typ>::printDataTable("przed usunieciem z kolejki, ale juz po sortowaniu:");
-        return SmartBucketsort<typ>::getFirst();
+        return SmartBucket<typ>::getFirst();
     }
 };
 

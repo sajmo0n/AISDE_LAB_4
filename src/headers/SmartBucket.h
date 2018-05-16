@@ -9,7 +9,7 @@
 #include "SimpleObject.h"
 #include <stdlib.h>
 template <typename typ>
-class SmartBucketsort : public SmartDataTable<typ> {
+class SmartBucket : public SmartDataTable<typ> {
 public:
 
     void bucketsort(long maxValue){ // maxValue - maksymalna wartość danej wpisywanej do kolejki

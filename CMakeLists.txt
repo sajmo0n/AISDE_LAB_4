@@ -27,4 +27,4 @@ add_executable(Kolejka
         src/headers/TournamentQueue.h
         src/headers/InsertionQueue.h
         src/sources/main.cpp
-        Makefile src/headers/Bucketsort.h src/headers/SmartBucketsort.h)
+        Makefile src/headers/BucketQueue.h src/headers/SmartBucket.h)

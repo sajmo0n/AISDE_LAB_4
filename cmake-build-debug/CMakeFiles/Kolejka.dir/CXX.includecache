@@ -24,9 +24,9 @@ SmartBubble.h
 AbstractPriorityQueue.h
 ../src/headers/AbstractPriorityQueue.h
 
-../src/headers/Bucketsort.h
-SmartBucketsort.h
-../src/headers/SmartBucketsort.h
+../src/headers/BucketQueue.h
+SmartBucket.h
+../src/headers/SmartBucket.h
 AbstractPriorityQueue.h
 ../src/headers/AbstractPriorityQueue.h
 
@@ -39,12 +39,6 @@ AbstractPriorityQueue.h
 ../src/headers/InsertionQueue.h
 SmartInsertion.h
 ../src/headers/SmartInsertion.h
-AbstractPriorityQueue.h
-../src/headers/AbstractPriorityQueue.h
-
-../src/headers/QuicksortQueue.h
-SmartQuicksort.h
-../src/headers/SmartQuicksort.h
 AbstractPriorityQueue.h
 ../src/headers/AbstractPriorityQueue.h
 
@@ -66,7 +60,7 @@ AbstractPriorityObject.h
 SmartDataTable.h
 ../src/headers/SmartDataTable.h
 
-../src/headers/SmartBucketsort.h
+../src/headers/SmartBucket.h
 SmartDataTable.h
 ../src/headers/SmartDataTable.h
 SimpleObject.h
@@ -87,12 +81,6 @@ SmartDataTable.h
 ../src/headers/SmartInsertion.h
 SmartDataTable.h
 ../src/headers/SmartDataTable.h
-
-../src/headers/SmartQuicksort.h
-SmartDataTable.h
-../src/headers/SmartDataTable.h
-SimpleObject.h
-../src/headers/SimpleObject.h
 
 ../src/headers/SmartSelection.h
 SmartDataTable.h
@@ -121,10 +109,8 @@ iostream
 -
 InsertionQueue.h
 -
-QuicksortQueue.h
-/home/sajmon/Pulpit/Kolejka/src/sources/QuicksortQueue.h
-Bucketsort.h
-/home/sajmon/Pulpit/Kolejka/src/sources/Bucketsort.h
+BucketQueue.h
+/home/sajmon/Pulpit/Kolejka/src/sources/BucketQueue.h
 RandomGenerator.h
 /home/sajmon/Pulpit/Kolejka/src/sources/RandomGenerator.h
 HeapQueue.h
