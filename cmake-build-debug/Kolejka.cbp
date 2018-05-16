@@ -101,6 +101,9 @@
 		<Unit filename="/home/sajmon/Pulpit/Kolejka/src/headers/BubbleQueue.h">
 			<Option target="Kolejka"/>
 		</Unit>
+		<Unit filename="/home/sajmon/Pulpit/Kolejka/src/headers/Bucketsort.h">
+			<Option target="Kolejka"/>
+		</Unit>
 		<Unit filename="/home/sajmon/Pulpit/Kolejka/src/headers/HeapQueue.h">
 			<Option target="Kolejka"/>
 		</Unit>
@@ -120,6 +123,9 @@
 			<Option target="Kolejka"/>
 		</Unit>
 		<Unit filename="/home/sajmon/Pulpit/Kolejka/src/headers/SmartBubble.h">
+			<Option target="Kolejka"/>
+		</Unit>
+		<Unit filename="/home/sajmon/Pulpit/Kolejka/src/headers/SmartBucketsort.h">
 			<Option target="Kolejka"/>
 		</Unit>
 		<Unit filename="/home/sajmon/Pulpit/Kolejka/src/headers/SmartDataTable.h">

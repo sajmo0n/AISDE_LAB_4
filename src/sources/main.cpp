@@ -3,6 +3,7 @@
 #include <iostream>
 #include <InsertionQueue.h>
 #include "QuicksortQueue.h"
+#include "Bucketsort.h"
 #include "RandomGenerator.h"
 #include "HeapQueue.h"
 #include "TournamentQueue.h"
@@ -30,7 +31,9 @@ int main (int argc, char * const argv[]) {
 //  InsertionQueueOfficious<SimpleObject<int> > theQueue;
 //	InsertionQueueLazy<SimpleObject<int> > theQueue;
 //  QuicksortQueueOfficious<SimpleObject<int> > theQueue;
-    QuicksortQueueLazy<SimpleObject<int> > theQueue;
+//  QuicksortQueueLazy<SimpleObject<int> > theQueue;
+//  BucketsortQueueOfficious<SimpleObject<int> > theQueue;
+  BucketsortQueueLazy<SimpleObject<int> > theQueue;
 
 
 
@@ -38,7 +41,7 @@ int main (int argc, char * const argv[]) {
 
     SimpleObject<int> a = SimpleObject<int>(0);
 
-    long wielkosc = 50;
+    long wielkosc = 10;
     for (int i = 0; i <= wielkosc; i++) {
         a.setValue(gen.getRandom(1, 100));
         theQueue.put(a);
@@ -48,30 +51,30 @@ int main (int argc, char * const argv[]) {
 
     theQueue.printDataTable("po pierwszym wczytaniu losowym");
 
-    std::cout << "Comparisons: " << SimpleObject<int>::getComparisons() << "\n";
-    std::cout << "Copyings: " << SimpleObject<int>::getCopyings() << "\n\n";
-
-    theQueue.quicksort(0L, theQueue.getDataSize());
-    theQueue.printDataTable("po sortowaniu");
-    std::cout << "Comparisons: " << SimpleObject<int>::getComparisons() << "\n";
-    std::cout << "Copyings: " << SimpleObject<int>::getCopyings() << "\n\n";
-
-//    for (int i = 0; i < wielkosc + 1; i++) {
-//        try {
-////            std::cout << "DataSize: " << theQueue.getDataSize() << "\n";
-////            theQueue.printDataTable("przed get");
-////            std::cout << "get: " << theQueue.get().getValue() << "\n\n";
-////              theQueue.printDataTable("po get");
-//              theQueue.get();
-//        }
-//        catch (QueueException &exc) {
-//            std::cout << "get: empty\n";
-//        }
-//
-//    }
-//
 //    std::cout << "Comparisons: " << SimpleObject<int>::getComparisons() << "\n";
-//    std::cout << "Copyings: " << SimpleObject<int>::getCopyings() << "\n";
+//    std::cout << "Copyings: " << SimpleObject<int>::getCopyings() << "\n\n";
+//
+//    theQueue.quicksort(0L, theQueue.getDataSize());
+//    theQueue.printDataTable("po sortowaniu");
+//    std::cout << "Comparisons: " << SimpleObject<int>::getComparisons() << "\n";
+//    std::cout << "Copyings: " << SimpleObject<int>::getCopyings() << "\n\n";
+
+    for (int i = 0; i < wielkosc + 1; i++) {
+        try {
+//            std::cout << "DataSize: " << theQueue.getDataSize() << "\n";
+            theQueue.printDataTable("przed get");
+            std::cout << "get: " << theQueue.get().getValue() << "\n\n";
+//              theQueue.printDataTable("po get");
+//              theQueue.get();
+        }
+        catch (QueueException &exc) {
+            std::cout << "get: empty\n";
+        }
+
+    }
+
+    std::cout << "Comparisons: " << SimpleObject<int>::getComparisons() << "\n";
+    std::cout << "Copyings: " << SimpleObject<int>::getCopyings() << "\n";
 
     return 0;
 }

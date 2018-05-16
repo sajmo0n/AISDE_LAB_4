@@ -16,17 +16,18 @@ public:
 
     void quicksort(long left, long right) {
         long i,j;
-        SimpleObject<int> pivot;
+        long pivot;
         i = (left + right) / 2;
-        pivot = (*this)[i];
+        pivot = (*this)[i].getValue();
         (*this)[i] = (*this)[right];
         for(j = i = 0L; i < right; i++)
-            if((*this)[i] < pivot)
+            if((*this)[i].getValue() < pivot)
             {
                 SmartDataTable<typ>::swap(i, j);
                 j++;
             }
-        (*this)[right] = (*this)[j]; (*this)[j] = pivot;
+        (*this)[right] = (*this)[j];
+        (*this)[j] = pivot;
         if(0L < j - 1)  quicksort(0L, j - 1);
         if(j + 1 < right) quicksort(j + 1, right);
     }
