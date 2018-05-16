@@ -7,31 +7,27 @@
 
 #include "SmartDataTable.h"
 #include "SimpleObject.h"
-
+#include <stdlib.h>
 template <typename typ>
 class SmartBucketsort : public SmartDataTable<typ> {
 public:
 
-    void bucketsort(const long WMIN, const long WMAX){
-        long lw[WMAX - WMIN + 1],i,j;
-
-// najpierw zerujemy liczniki
-
-        for(i = WMIN; i <= WMAX; i++) lw[i - WMIN] = 0;
-
-// zliczamy w odpowiednich licznikach wystąpienia
-// wartości elementów sortowanego zbioru
-
-        for(i = 0; i < SmartDataTable<typ>::getDataSize(); i++) lw[(*this)[i].getValue() - WMIN]++;
-
-// zapisujemy do zbioru wynikowego numery niezerowych liczników
-// tyle razy, ile wynosi ich zawartość
-
-        j = 0;
-        for(i = WMIN; i <= WMAX; i++) while(lw[i - WMIN]--) (*this)[j++] = i;
-
+    void bucketsort(long maxValue){ // maxValue - maksymalna wartość danej wpisywanej do kolejki
+        long bucket[maxValue];
+        long i;
+        for(i = 0; i <= maxValue; i++){
+            bucket[i] = 0; //zerowanie licznika
+        }
+                for(i = 0; i < SmartDataTable<typ>::getDataSize()+1; i++) {
+                    bucket[(*this)[i].getValue()]++; // zliczanie wystapien wartosci elementow zbioru sortowanego
+                }
+        long j = SmartDataTable<typ>::getDataSize();
+        for(i = 0; i <= maxValue; i++) {
+            while (bucket[i]--) {
+                (*this)[j--] = i;// zapisywanie do danych do kolejki
+            }
+        }
     }
-
-    };
+};
 
 #endif //SMARTBUCKET_SORT_H

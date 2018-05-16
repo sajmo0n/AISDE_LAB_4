@@ -12,10 +12,8 @@ class SmartInsertion : public SmartDataTable<typ> {
 public:
 
     void doInsertion(){
-            long ost=SmartDataTable<typ>::getDataSize();
-            long start=1;
-            for( start; start<=ost; start++){
-                for(long i=start;i>0;i--){
+            for( long begin = 1; begin<=SmartDataTable<typ>::getDataSize(); begin++){
+                for(long i=begin;i>0;i--){
                     if((*this)[i-1]<(*this)[i])
                         SmartDataTable<typ>::swap(i-1,i);
                 }

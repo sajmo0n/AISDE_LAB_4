@@ -7,6 +7,7 @@
 #include "SmartBucketsort.h"
 #include "AbstractPriorityQueue.h"
 
+
 template <typename typ>
 class BucketsortQueueOfficious : public SmartBucketsort<typ>, public AbstractPriorityOfficiousQueue<typ>{
 public:
@@ -15,12 +16,12 @@ public:
 private:
     void putOfficious(typ& a) {
         (*this) += a;
-        SmartBucketsort<typ>::bucketsort(0,100);
+        SmartBucketsort<typ>::bucketsort(1000);
     }
 
     typ getOfficious(){
         typ ret = SmartBucketsort<typ>::getFirst();
-        SmartBucketsort<typ>::bucketsort(0,100);
+        SmartBucketsort<typ>::bucketsort(1000);
         return ret;
     }
 };
@@ -38,7 +39,8 @@ private:
     typ getLazy(){
         if(SmartBucketsort<typ>::getDataSize() < 0L) throw QueueException(QUEUE_EMPTY);
 
-        SmartBucketsort<typ>::bucketsort(0,100);
+        SmartBucketsort<typ>::bucketsort(1000);
+        //SmartDataTable<typ>::printDataTable("przed usunieciem z kolejki, ale juz po sortowaniu:");
         return SmartBucketsort<typ>::getFirst();
     }
 };

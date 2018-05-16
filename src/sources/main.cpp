@@ -15,13 +15,13 @@
 
 int main (int argc, char * const argv[]) {
 
-    RandomGenerator gen(283591); // tu nalezy wstawic numer indeksu
+    RandomGenerator gen(11111); // tu nalezy wstawic numer indeksu
 
 
 // Wybor implementacji kolejki:
 
 //	TournamentQueueOfficious<SimpleObject<int> > theQueue;
-//	TournamentQueueLazy<SimpleObject<int> > theQueue;
+	TournamentQueueLazy<SimpleObject<int> > theQueue;
 //  HeapQueueOfficious<SimpleObject<int> > theQueue;
 //  HeapQueueLazy<SimpleObject<int> > theQueue;
 //	BubbleQueueOfficious<SimpleObject<int> > theQueue;
@@ -30,104 +30,138 @@ int main (int argc, char * const argv[]) {
 //  SelectionQueueLazy<SimpleObject<int> > theQueue;
 //  InsertionQueueOfficious<SimpleObject<int> > theQueue;
 //	InsertionQueueLazy<SimpleObject<int> > theQueue;
-//  QuicksortQueueOfficious<SimpleObject<int> > theQueue;
-//  QuicksortQueueLazy<SimpleObject<int> > theQueue;
 //  BucketsortQueueOfficious<SimpleObject<int> > theQueue;
-  BucketsortQueueLazy<SimpleObject<int> > theQueue;
-
-
-
-// testowanie kolejki w petli - najpierw wkladamy potem wyjmujemy
+//  BucketsortQueueLazy<SimpleObject<int> > theQueue;
 
     SimpleObject<int> a = SimpleObject<int>(0);
+    long counterComparisons = 0;
+    long counterCopyings = 0;
+    long counterComparisonsNew = 0;
+    long counterCopyingsNew = 0;
+    long counterComparisonsDiff = 0;
+    long counterCopyingsDiff = 0;
 
-    long wielkosc = 10;
-    for (int i = 0; i <= wielkosc; i++) {
-        a.setValue(gen.getRandom(1, 100));
-        theQueue.put(a);
-//        std::cout << "wartosc a: " << a.getValue() << "\n";
-//        std::cout << "kolejka: " << theQueue[i].getValue() << "\n\n";
-    }
+/***********************************************************************************************
+ * UWAGA! ABY SKORZSYTAC Z ODPOWIEDNIEGO WARIANTU TESTU NALEZY ZAKOMENTOWAC POZOSTALE WARIANTY !
+ ************************************************************************************************/
 
-    theQueue.printDataTable("po pierwszym wczytaniu losowym");
-
-//    std::cout << "Comparisons: " << SimpleObject<int>::getComparisons() << "\n";
-//    std::cout << "Copyings: " << SimpleObject<int>::getCopyings() << "\n\n";
+///*******************************************************************************************************
+// TESTOWANIE KOLEJKI WARIANT NR 1 - WIECEJ WSTAWIEN NIZ WYJEC DLA ROZNYCH WIELKOSCI ZBIORU WEJSCIOWEGO
+//********************************************************************************************************/
 //
-//    theQueue.quicksort(0L, theQueue.getDataSize());
-//    theQueue.printDataTable("po sortowaniu");
-//    std::cout << "Comparisons: " << SimpleObject<int>::getComparisons() << "\n";
-//    std::cout << "Copyings: " << SimpleObject<int>::getCopyings() << "\n\n";
+//    long startsize = 10; // wielkosc losowego zbioru wejsciowego
+//    float divider = 0.2; //  stosunek wyjec do wstawien
+//        std::cout << "WIELKOSC ZBIORU WEJSCIOWEGO: " << startsize << "\n\n";
+//        for (int i = 1; i <= startsize; i++) {
+//            a.setValue(gen.getRandom(0, 100));
+//            theQueue.put(a);
+//        }
+//
+//        theQueue.printDataTable("po pierwszym wczytaniu losowym");
+//
+//        for (int i = 1; i <= startsize*divider ; i++) {
+//            try {
+//                //theQueue.printDataTable("przed get");
+//                theQueue.get();
+//            }
+//            catch (QueueException &exc) {
+//                std::cout << "get: empty\n";
+//            }
+//
+//        }
+//
+//        theQueue.printDataTable("po wyjeciach");
+//
+//        std::cout << "Comparisons: " << SimpleObject<int>::getComparisons() << "\n";
+//        std::cout << "Copyings: " << SimpleObject<int>::getCopyings() << "\n";
+////    }
 
-    for (int i = 0; i < wielkosc + 1; i++) {
-        try {
-//            std::cout << "DataSize: " << theQueue.getDataSize() << "\n";
-            theQueue.printDataTable("przed get");
-            std::cout << "get: " << theQueue.get().getValue() << "\n\n";
-//              theQueue.printDataTable("po get");
-//              theQueue.get();
+///*******************************************************************************************************
+//    TESTOWANIE KOLEJKI WARIANT NR 2 - WIECEJ WYJEC NIZ WSTAWIEN DLA ROZNYCH WIELKOSCI ZBIORU WEJSCIOWEGO
+//    W TYM PRZYPADKU W KOLEJCE ZNAJDUJE SIE JUZ 100 LOSOWYCH ELEMENTOW
+//********************************************************************************************************/
+
+//    for (int i = 0; i < 100; i++){
+//        a.setValue(gen.getRandom(0, 100));
+//        theQueue.put(a);
+//    }
+//
+//    std::cout << "Porownania dla wstawienia kolejki teorytycznej: " << SimpleObject<int>::getComparisons() << "\n";
+//    std::cout << "Kopiowania dla wstawienia kolejki teorytycznej: " << SimpleObject<int>::getCopyings() << "\n";
+//
+//    //theQueue.printDataTable("po pierwszym wczytaniu losowym");
+//
+//
+//    long startsize = 2; // wielkosc losowego zbioru wejsciowego
+//    float divider = 5; //  stosunek wyjec do wstawien
+
+//    std::cout << "WIELKOSC ZBIORU WEJSCIOWEGO: " << startsize << "\n\n";
+//    for (int i = 1; i <= startsize; i++) {
+//        a.setValue(gen.getRandom(0, 100));
+//        theQueue.put(a);
+//    }
+//
+//    theQueue.printDataTable("po pierwszym wczytaniu losowym");
+//
+//    for (int i = 1; i <= startsize*divider ; i++) {
+//        try {
+//            //theQueue.printDataTable("przed get");
+//            theQueue.get();
+//        }
+//        catch (QueueException &exc) {
+//            std::cout << "get: empty\n";
+//        }
+//
+//    }
+//
+//    theQueue.printDataTable("po wyjeciach");
+//
+//    std::cout << "Porownania po wlasciwym tescie: " << SimpleObject<int>::getComparisons() << "\n";
+//    std::cout << "Kopiowania po wlasciwym tescie: " << SimpleObject<int>::getCopyings() << "\n";
+
+    /*******************************************************************************************************
+ TESTOWANIE KOLEJKI WARIANT NR 3 - TA SAMA ILOSC WSTAWIEN I WYJEC DLA ROZNYCH WIELKOSCI ZBIORU WEJSCIOWEGO
+********************************************************************************************************/
+
+    long startsize = 10; // wielkosc losowego zbioru wejsciowego
+    float divider = 1; //  stosunek wyjec do wstawien
+    long finalsize = 50;
+    for (startsize; startsize <= finalsize; startsize = startsize +5 ) {
+        std::cout << "-------------------------------------------------" << "\n\n";
+        std::cout << "WIELKOSC ZBIORU WEJSCIOWEGO: " << startsize << "\n\n";
+        for (int i = 1; i <= startsize; i++) {
+            a.setValue(gen.getRandom(0, 100));
+            theQueue.put(a);
         }
-        catch (QueueException &exc) {
-            std::cout << "get: empty\n";
+
+        //theQueue.printDataTable("po pierwszym wczytaniu losowym");
+
+        for (int i = 1; i <= startsize; i++) {
+            try {
+                //theQueue.printDataTable("przed get");
+                theQueue.get();
+            }
+            catch (QueueException &exc) {
+                std::cout << "get: empty\n";
+            }
+
         }
 
-    }
+        //theQueue.printDataTable("po wyjeciach");
 
-    std::cout << "Comparisons: " << SimpleObject<int>::getComparisons() << "\n";
-    std::cout << "Copyings: " << SimpleObject<int>::getCopyings() << "\n";
+        counterComparisonsNew = counterComparisons;
+        counterCopyingsNew = counterCopyings;
+        counterComparisons = SimpleObject<int>::getComparisons();
+        counterCopyings = SimpleObject<int>::getCopyings();
+        counterComparisonsDiff = counterComparisons - counterComparisonsNew;
+        counterCopyingsDiff = counterCopyings - counterCopyingsNew;
 
+        std::cout << "Porownania: " << counterComparisonsDiff << "\n";
+        std::cout << "Kopiowania: " << counterCopyingsDiff << "\n";
+        std::cout << "laczne porownania w petli: " << SimpleObject<int>::getComparisons() << "\n";
+        std::cout << "laczne kopiowania w petli: " << SimpleObject<int>::getCopyings() << "\n";
+        std::cout << "-------------------------------------------------" << "\n";
+
+   }
     return 0;
 }
-// Proste, "silowe" testowanie kolejki//	SimpleObject<int> a = SimpleObject<int>(8);
-//	theQueue.put(a);
-//	a.setValue(2);
-//	theQueue.put(a);
-//	a.setValue(5);
-//	theQueue.put(a);
-//	a.setValue(4);
-//	theQueue.put(a);
-//	a.setValue(1);
-//	theQueue.put(a);
-//	a.setValue(7);
-//	theQueue.put(a);
-//	a.setValue(6);
-//	theQueue.put(a);
-//	a.setValue(11);
-//	theQueue.put(a);
-//	a.setValue(3);
-//	theQueue.put(a);
-
-//   theQueue.printDataTable("po wczytaniu 1");
-//
-//	try{
-//		std::cout << "get: " << theQueue.get().getValue() << "\n";
-//	}
-//	catch(QueueException& exc) {
-//		std::cout << "get: empty\n";
-//	}
-//    theQueue.printDataTable("po get");
-//	a.setValue(3);
-//	theQueue.put(a);
-//	a.setValue(12);
-//	theQueue.put(a);
-//	a.setValue(1);
-//	theQueue.put(a);
-//	a.setValue(5);
-//	theQueue.put(a);
-//	a.setValue(11);
-//	theQueue.put(a);
-//    theQueue.printDataTable("po wczytaniu 2");
-
-//	try{
-//		std::cout << "get: " << theQueue.get().getValue() << "\n";
-//	}
-//	catch(QueueException& exc) {
-//		std::cout << "get: empty\n";
-//	}
-//    theQueue.printDataTable("po get");
-
-//	std::cout << "Comparisons: " << SimpleObject<int>::getComparisons() << "\n";
-//	std::cout << "Copyings: " << SimpleObject<int>::getCopyings() << "\n";
-//
-//    return 0;
-//}

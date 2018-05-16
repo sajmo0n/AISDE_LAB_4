@@ -12,17 +12,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4490bb32-e0c5-4c65-833c-9f6b6a724e20" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/sajmon.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/headers/Bucketsort.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/headers/SmartBucketsort.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Kolejka.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Kolejka.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Kolejka.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Kolejka.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Kolejka.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Kolejka.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Kolejka.dir/src/sources/main.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Kolejka.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Kolejka.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/headers/SmartQuicksort.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/SmartQuicksort.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Kolejka" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Kolejka" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/Bucketsort.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/Bucketsort.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/InsertionQueue.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/InsertionQueue.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/SmartBucketsort.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/SmartBucketsort.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headers/SmartInsertion.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/headers/SmartInsertion.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sources/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/sources/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -39,8 +36,8 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sources/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-220">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="-2068">
+              <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
               <folding>
                 <element signature="e#19#38#0" expanded="true" />
               </folding>
@@ -48,11 +45,44 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="SimpleObject.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/headers/SimpleObject.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractPriorityObject.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/headers/AbstractPriorityObject.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Bucketsort.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/headers/Bucketsort.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+            <state relative-caret-position="248">
+              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+              <folding>
+                <element signature="e#95#123#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SmartBucketsort.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/headers/SmartBucketsort.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
+              <folding>
+                <element signature="e#96#123#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,15 +102,15 @@
         <option value="$PROJECT_DIR$/src/headers/SmartWstawianie.h" />
         <option value="$PROJECT_DIR$/src/headers/SmartDataTable.h" />
         <option value="$PROJECT_DIR$/src/headers/WstawianieQueue.h" />
-        <option value="$PROJECT_DIR$/src/headers/SmartInsertion.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/headers/SmartSelection.h" />
-        <option value="$PROJECT_DIR$/src/headers/InsertionQueue.h" />
         <option value="$PROJECT_DIR$/src/headers/QuicksortQueue.h" />
         <option value="$PROJECT_DIR$/src/headers/BubblesortQueue.h" />
-        <option value="$PROJECT_DIR$/src/headers/SmartBucketsort.h" />
         <option value="$PROJECT_DIR$/src/headers/SmartQuicksort.h" />
+        <option value="$PROJECT_DIR$/src/headers/SmartInsertion.h" />
+        <option value="$PROJECT_DIR$/src/headers/InsertionQueue.h" />
         <option value="$PROJECT_DIR$/src/headers/Bucketsort.h" />
+        <option value="$PROJECT_DIR$/src/headers/SmartBucketsort.h" />
         <option value="$PROJECT_DIR$/src/sources/main.cpp" />
       </list>
     </option>
@@ -180,7 +210,8 @@
       <workItem from="1526244262126" duration="9577000" />
       <workItem from="1526282022513" duration="64000" />
       <workItem from="1526289055882" duration="19000" />
-      <workItem from="1526395475796" duration="26805000" />
+      <workItem from="1526395475796" duration="27632000" />
+      <workItem from="1526484674487" duration="12914000" />
     </task>
     <task id="LOCAL-00001" summary="drugi commit">
       <created>1526396592082</created>
@@ -203,14 +234,21 @@
       <option name="project" value="LOCAL" />
       <updated>1526426912288</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="5ty commit:&#10;- zaimplementowany InsertionSort&#10;- zaimplementowany Quicksort - do poprawy, delikatna poprawa skorzystanie z getValue()&#10;- zaimplementowany Bucketsort - działający w 90%">
+      <created>1526429538543</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1526429538543</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38879000" />
+    <option name="totallyTimeSpent" value="52620000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15447599" />
@@ -218,12 +256,12 @@
       <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.9137555" weight="0.3336831" />
       <window_info anchor="bottom" id="CMake" order="11" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.52401745" side_tool="true" weight="0.3788038" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.47598255" visible="true" weight="0.3788038" />
       <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.47598255" visible="true" weight="0.4144806" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49945414" weight="0.33053514" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49945414" weight="0.32984293" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39979014" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -234,19 +272,19 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47598255" weight="0.4144806" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15447599" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15447599" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47598255" visible="true" weight="0.3788038" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.9137555" weight="0.3336831" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49945414" weight="0.33053514" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.52401745" side_tool="true" visible="true" weight="0.3788038" />
+      <window_info active="true" anchor="bottom" id="Messages" order="7" sideWeight="0.9137555" visible="true" weight="0.3336831" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49945414" weight="0.32984293" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.52401745" side_tool="true" weight="0.3788038" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="CMake" order="11" />
@@ -264,7 +302,8 @@
     <MESSAGE value="drugi commit" />
     <MESSAGE value="trzeci commit:&#10;- zaimplementowany InsertionSort" />
     <MESSAGE value="czwarty commit:&#10;- zaimplementowany InsertionSort&#10;- zaimplementowany Quicksort - do poprawy" />
-    <option name="LAST_COMMIT_MESSAGE" value="czwarty commit:&#10;- zaimplementowany InsertionSort&#10;- zaimplementowany Quicksort - do poprawy" />
+    <MESSAGE value="5ty commit:&#10;- zaimplementowany InsertionSort&#10;- zaimplementowany Quicksort - do poprawy, delikatna poprawa skorzystanie z getValue()&#10;- zaimplementowany Bucketsort - działający w 90%" />
+    <option name="LAST_COMMIT_MESSAGE" value="5ty commit:&#10;- zaimplementowany InsertionSort&#10;- zaimplementowany Quicksort - do poprawy, delikatna poprawa skorzystanie z getValue()&#10;- zaimplementowany Bucketsort - działający w 90%" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -272,6 +311,16 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/sources/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#19#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sources/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
@@ -436,50 +485,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/headers/RandomGenerator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/Makefile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2530" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Makefile">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/headers/AbstractPriorityObject.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/headers/SmartTable.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="75" column="9" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/headers/TournamentQueue.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
-          <folding>
-            <element signature="e#402#430#0" expanded="true" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/headers/AbstractQueue.h">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -499,20 +515,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="23" />
-          <folding>
-            <element signature="e#392#416#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/headers/InsertionQueue.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
-          <folding>
-            <element signature="e#93#120#0" expanded="true" />
-            <element signature="e#166#180#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -534,24 +536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/headers/SelectionQueue.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#395#422#0" expanded="true" />
-            <element signature="e#489#503#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/headers/SmartBubble.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/headers/SmartTournament.h">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -559,55 +543,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/headers/SmartDataTable.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-702">
-          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
-          <folding>
-            <element signature="e#317#340#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/headers/SmartHeap.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/headers/SimpleObject.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/headers/SmartBucketsort.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
-          <folding>
-            <element signature="e#96#123#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/headers/SmartInsertion.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" selection-start-line="9" selection-end-line="23" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/headers/QuicksortQueue.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="23" column="77" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="77" />
-          <folding>
-            <element signature="e#93#120#0" expanded="true" />
-            <element signature="e#167#181#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -621,17 +560,118 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/include/stdlib.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="127" column="8" selection-start-line="127" selection-start-column="8" selection-end-line="127" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/headers/SelectionQueue.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#395#422#0" expanded="true" />
+            <element signature="e#489#503#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/headers/SmartHeap.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/headers/SmartBubble.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/headers/RandomGenerator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="73" lean-forward="true" selection-start-line="20" selection-start-column="73" selection-end-line="20" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/headers/SmartDataTable.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-630">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+          <folding>
+            <element signature="e#317#340#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/headers/SmartInsertion.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/headers/InsertionQueue.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="46" column="10" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
+          <folding>
+            <element signature="e#93#120#0" expanded="true" />
+            <element signature="e#166#180#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/headers/SmartBucketsort.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
+          <folding>
+            <element signature="e#96#123#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/headers/AbstractPriorityObject.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/headers/SimpleObject.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/headers/SmartTable.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="67" column="5" lean-forward="true" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/headers/Bucketsort.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+        <state relative-caret-position="248">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+          <folding>
+            <element signature="e#95#123#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sources/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-220">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="-2068">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
           <folding>
             <element signature="e#19#38#0" expanded="true" />
           </folding>

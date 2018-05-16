@@ -44,7 +44,7 @@ private:
                     QueueException(QUEUE_EMPTY);
 
         SmartInsertion<typ>::doInsertion();
-        SmartDataTable<typ>::printDataTable("przed usunieciem z kolejki, ale juz po sortowaniu:");
+        //SmartDataTable<typ>::printDataTable("przed usunieciem z kolejki, ale juz po sortowaniu:");
         return SmartInsertion<typ>::getFirst();
     }
 };
